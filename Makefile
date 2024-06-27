@@ -1,6 +1,6 @@
 .PHONY: examples
 
-CC = xelatex
+CC = /usr/local/texlive/2024/bin/x86_64-linux/xelatex
 EXAMPLES_DIR = examples
 RESUME_DIR = examples/resume
 CV_DIR = examples/cv
