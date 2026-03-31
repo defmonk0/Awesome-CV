@@ -736,13 +736,15 @@
 \newcommand*{\cvskill}[2]{%
 	\skilltypestyle{#1} & \skillsetstyle{#2} \\
 }
+% Define a line of skill items usable in paragraphs.
+\newcommand{\skillitem}[2]{{\small\textbf{#1}: {\raggedright #2 \par}}\vspace{-0.5mm}}
 
 % Define an environment for cvitems(for cventry)
 \newenvironment{cvitems}{%
   \vspace{-4.0mm}
   \begin{justify}
   \begin{itemize}[leftmargin=2ex, nosep, noitemsep]
-    \setlength{\parskip}{0pt}
+    \setlength{\parskip}{1.5pt}
     \renewcommand{\labelitemi}{\bullet}
 }{%
   \end{itemize}
